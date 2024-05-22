@@ -8,10 +8,10 @@
 </div>
 
 
-<div> <a href="/actors/ <%= @the_actor_id %>">Delete actor</a></div>
+<div> <a href="/delete_actor/<%= @the_actor.id %>">Delete actor</a></div>
 <hr>
 
-<form action="/insert_actor_record" method="post">
+<form action="/modify_actor_record/<%= @the_actor.id %>" method="post">
   <div>
     <label for="name_field">Name</label>
     <input id="name_field" type="text" name="the_name" value="<%= @the_actor.name %>">

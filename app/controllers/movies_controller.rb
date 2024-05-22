@@ -19,9 +19,6 @@ class MoviesController < ApplicationController
     redirect_to("/movies/#{the_movie.id}")
   end
 
-
-
-
   def create
     m = Movie.new
 
